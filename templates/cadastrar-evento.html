@@ -1,5 +1,38 @@
 {% extends 'base.html' %}
-{% block title %}Eventos{% endblock %}
+{% block title %}Cadastrar eventos{% endblock %}
 {% block content %}
-    <div class="container"></div>
+    <div class="container">
+    <h1>Cadastrar eventos</h1>
+    <hr>
+    <form action="" method="POST">
+        <div class="row">
+            <div class="col-12 col-md-9 col-lg-4 mb-3">
+                <label class="form-label">Nome do evento:</label>
+                <input type="text" class="form-control" name="evento">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <label class="form-label">Data do evento:</label>
+                <input type="date" class="form-control" name="data">
+            </div>
+              <div class="col-12 col-md-3 col-lg-2 mb-3">
+                <label class="form-label">Idade minina:</label>
+                <input type="number" class="form-control" name="idade">
+            </div>
+              <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <label class="form-label">hora do evento:</label>
+                <input type="time" class="form-control" name="hora">
+            </div>
+             <div class="col-12 col-md-4 col-lg-3 mb-3">
+                <label class="form-label">CEP:</label>
+                <input type="text" class="form-control" name="cep">
+            </div>
+             </div>
+             <div class="col-12 col-md-3 col-lg-2 mb-3">
+                <label class="form-label">UF:</label>
+                <select class="form-select" name="uf">
+            </div>
+        </div>
+    </form>
+</div>
+
 {% endblock %}
